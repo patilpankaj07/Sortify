@@ -1,0 +1,99 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #abe5f7df;
+  padding: 0px 80px;
+}
+
+.header span {
+  color: crimson;
+}
+
+.header-logo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  
+}
+
+#heading{
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 1.5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+
+.header__options {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header__option {
+  font-weight: 500;
+  margin-left: 100px;
+  color: rgb(33, 27, 27);
+  cursor: pointer;
+}
+
+#header__bar {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 120px;
+  width: 100%;
+  color: white;
+  background-color:#abe5f7df;
+  transition: 1.0s ease all;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header__bar__title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+
+.header__bar__icons {
+  color: white;
+}
+
+#header__bar img {
+  height: 30px;
+  width: 30px;
+  margin: 0px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-logo {
+    margin-right: -50px;
+  }
+
+  .header {
+    padding: 0px 10px;
+  }
+
+  .header__option {
+    font-size: 0.9rem;
+  }
+}
